@@ -1,5 +1,6 @@
 package com.fh.hruser;
 
+import com.fh.hruser.entities.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
