@@ -4,6 +4,7 @@ import com.fh.hrworker.entities.Worker;
 import com.fh.hrworker.repositories.WorkerRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,11 +22,19 @@ public class WorkerResource {
     @Autowired
     private Environment env;
 
+    @Value("${test.config}")
+    private String testConfig;
 
     private final WorkerRepository workerRepository;
 
     public WorkerResource(WorkerRepository workerRepository) {
         this.workerRepository = workerRepository;
+    }
+
+    @GetMapping(value = "/configs")
+    public ResponseEntity<Void> getConfigs(){
+        log.info("CONFIG = "+testConfig);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping
