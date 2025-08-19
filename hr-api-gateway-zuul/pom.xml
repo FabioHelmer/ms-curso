@@ -63,6 +63,13 @@
 
 	<build>
 		<plugins>
+			<!-- plugin do compilador -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<!-- plugin do Spring Boot que cria o JAR executável -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
