@@ -1,9 +1,7 @@
 # Curso Microsserviços Java com Spring Boot e Spring Cloud
+
 ## Atenção: curso específico para versões Java 11 e Spring Boot 2.3.4
-#### Nelio Alves 
-- https://www.udemy.com/user/nelio-alves
-- https://youtube.com/devsuperior
-- https://instagram.com/devsuperior.ig
+### Conteudo desse repositorio foi desenvolvido seguindo o curso https://www.udemy.com/course/microsservicos-java-spring-cloud/?couponCode=MT180825G1
 
 # Checklist baixar e executar projeto pronto
 
